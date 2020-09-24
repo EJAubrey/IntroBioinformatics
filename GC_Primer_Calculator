@@ -1,0 +1,14 @@
+#Set up Variables
+sequence = "ATACAGTGAAGCACCACAGTA"
+
+#Calculate G & C content 
+g_content = sequence.count("G")
+c_content = sequence.count("C")
+seq_length = len(sequence)
+gc_percent = round((g_content + c_content)/seq_length, 2)
+
+#Display results to the user
+print("Primer sequence: {}".format(sequence))
+print("Total guanine count: {}".format(g_content))
+print("Total cytosine count: {}".format(c_content))
+print("Proportion of GC content: {}%".format(gc_percent))
